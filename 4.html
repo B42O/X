@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.center{
+ position:relative;
+ left:40%;
+}
+div>p{
+  background-color:rgb(137,207,240);
+  width:33.33%;
+  height:20px;
+  float:left;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<img class="center" src="logo.png" height="10%" width="20%" >
+<p align="center" style="color:blue;">GPREC Home Page</p>
+<div>
+<p><a href="index.html">Home</a></p>
+<p><a href="register.html">Register</a></p>
+<p><a href="signin.html">Signin</a> </p>
+</div>
+<img src="gprec-banner.jpg"  width="100%" height="400">
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+form{
+background-color:rgba(60,60,60,0.3);
+padding:50px;
+border :1px solid rgba(60,60,60,0.3);
+border-radius:10px;
+width:30%;
+position:relative;
+left:30%;
+}
+img{
+position:relative;
+left:40%;
+}
+</style>
+</head>
+<body>
+<img src="logo.png" height="15%" width="20%">
+ <h3 align="center"style="color:blue;">Welcome to GPREC<br>Student Registration</h3>
+ <form>
+ <label name="Firstname">Firstname:&nbsp;</label>
+ <input type="text" placeholder="Firstname" required><br><br>
+  <label name="middlename">Middlename:&nbsp; </label>
+ <input type="text" placeholder="middilename" required><br><br>
+  <label name="Lastname">Lastname: &nbsp;</label>
+ <input type="text" placeholder="Lastname" required><br><br>
+ Date of Birth: &nbsp;<input type="date" required><br><br>
+ <label name="course">Course: &nbsp;</label>
+ <select>
+ <option>CSE</option>
+ <option>ECE</option>
+ <option>EEE</option >
+ <option>MEC</option>
+ <option>CE</option>
+ </select><br><br>
+ <label name="gender">Gender:</label><br>
+ <input type="radio" name="gender" >Male<br>
+ <input type="radio" name="gender">Female<br>
+ <input type="radio"  name="gender">other<br>
+ <label name="Phone">Phone: &nbsp;</label>
+ <input type="number" required ><br><br>
+ <label name="address" >Address: &nbsp;</label>
+ <input type="textarea" rows="5" cols="30" required><br><br>
+ <label name="Email">Email: &nbsp;</label>
+ <input type="email" required><br><br>
+<label name="Password" >Password: &nbsp;</label>
+<input type="password" required><br><br>
+<label name="pass" >Confirm Password: &nbsp;</label>
+<input type="password" required><br><br>
+<a href="signin.html"><button>Register</button></a>
+ <div class="signin-link">
+<br>Already have an account? <a href="signin.html">Sign in</a>
+        </div>
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .login-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 100px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .login-box h2 {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 0 10px;
+            font-size: 24px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label><br><br>
+
+            <button type="button" onclick="window.location.href='home.html'">Cancel</button>
+            <button type="submit">Login</button><br><br>
+
+            <a href="#">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>
