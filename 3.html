@@ -1,0 +1,140 @@
+
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    input, textarea, select {
+      background-color: #4d79ff;
+      border: 1px solid black;
+    }
+    .required::after {
+      content: "*";
+      color: red;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #4d79ff;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: white;
+    }
+    input[type="radio"]:checked, input[type="checkbox"]:checked {
+      background-color: #4d79ff;
+    }
+    .subBtn {
+      background: white;
+      border: 1px solid lightgray;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>Dear student,<br>Please fill the following application for fresher’s job:</p>
+  <form action="thankyou.html" method="post">
+    <label class="required"><b>Name of the applicant</b></label>
+    <input type="text" required><br><br>
+
+    <label class="required"><b>Are you a resident of India?</b></label>
+    <input type="radio" name="resident" required>Yes
+    <input type="radio" name="resident" required>No<br><br>
+
+    <label class="required"><b>Application State</b></label>
+    <select required>
+      <option></option>
+      <option>Andhra Pradesh</option>
+      <option>Telangana</option>
+      <option>Karnataka</option>
+    </select><br><br>
+
+    <label class="required"><b>Your Degree</b></label>
+    <select required>
+      <option></option>
+      <option>B.E</option>
+      <option>B.Tech</option>
+    </select><br><br>
+
+    <label class="required"><b>Year of Graduation</b></label>
+    <select required>
+      <option></option>
+      <option>2023</option>
+      <option>2024</option>
+    </select><br><br>
+
+    <label class="required"><b>Graduation Percentage</b></label>
+    <input type="text" required><br><br>
+
+    <label><b>Your Strengths:</b></label>
+    <textarea rows="4" cols="40"></textarea><br><br>
+
+    <label><b>Key Skills:</b></label>
+    <input type="checkbox">C
+    <input type="checkbox">Python
+    <input type="checkbox">Java<br><br>
+
+    <label class="required"><b>Email ID</b></label>
+    <input type="email" required><br><br>
+
+    <label><b>Mobile Number</b></label>
+    <input type="text"><br><br>
+
+    <label class="required"><b>Date of Birth</b></label>
+    <input type="date" required><br><br>
+
+    <label><b>Would you like to reallocate for work in India?</b></label><br>
+    <input type="radio" name="reallocate" value="Yes" required>Yes
+    <input type="radio" name="reallocate" value="No" required>No<br><br>
+
+    <label><b>Your LinkedIn URL:</b></label>
+    <input type="url"><br><br>
+
+    <label><b>Upload Your Resume</b></label>
+    <input type="file" required><br><br>
+
+    <label class="required"><b>Insert Your Image</b></label>
+    <input type="file" required><br><br>
+
+    <input type="checkbox" required>I declare that all details provided are correct.<br><br>
+
+    <input type="submit" value="Submit" class="subBtn">
+  </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Thank You</title>
+ <style>
+ body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ margin: 0;
+ font-family: Arial, sans-serif;
+ text-align: center;
+ }
+ h1 {
+ color: red;
+ }
+ .message {
+ color: green;
+ }
+ .best-wishes {
+ color: violet;
+ }
+ </style>
+</head>
+<body>
+ <h1>Thank you for registration</h1>
+ <p class="message">We will inform you shortly if your job profile matches with any 
+company*</p>
+ <p class="best-wishes">All the best</p>
+</body>
+</html>
